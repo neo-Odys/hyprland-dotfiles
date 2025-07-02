@@ -1,0 +1,49 @@
+* {
+    border: none;
+    border-radius: 0;
+    font-family: JetBrains Mono;
+    font-size: 16px;
+    min-height: 0;
+}
+
+window#waybar {
+    all: unset;
+}
+
+.modules-left, .modules-center, .modules-right {
+    
+    background: alpha(@background, .6);
+}
+
+#clock, #battery, #network, #bluetooth, #cpu, #memory, #temperature, #workspaces, #custom-pacman {
+    padding: 0px 10px;
+    margin-right: 10px
+}
+
+#battery.charging {
+    color: #26A65B;
+}
+
+#battery.warning:not(.charging) {
+    color: #ffbe61;
+}
+
+#battery.critical:not(.charging) {
+    color: #f53c3c;
+}
+#workspaces {
+    padding: 0px 2px;
+    color: #000000;      
+}
+
+#workspaces .active {
+    color: #FFFFFF;      
+}
+
+#workspaces .inactive {
+    color: #000000;         
+}
+#custom-endpoint {
+    color: transparent;
+}
+

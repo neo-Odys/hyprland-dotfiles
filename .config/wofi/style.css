@@ -1,0 +1,39 @@
+/* Główne okno */
+#window {
+  background-color: rgba(24, 24, 24, 0.7); /* Ciemniejsze tło */
+  border-radius: 1.2rem; /* Zaokrąglone rogi */
+  border: 2px solid rgba(208, 172, 136, 0.3); /* Kolor ramki */
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1); /* Lekki cień */
+}
+
+/* Pasek wyszukiwania */
+#window #outer-box #input {
+  background-color: rgba(24, 24, 24, 0.6); /* Ciemniejsze tło paska */
+  color: #f2f2f2; /* Jasny tekst */
+  border: none;
+  border-bottom: 1px solid rgba(208, 172, 136, 0.5); /* Podkreślenie dolne */
+  padding: 0.8rem 1rem;
+  font-size: 1.5rem;
+  border-radius: 1.2rem 1.2rem 0 0; /* Zaokrąglone rogi */
+}
+
+/* Wpisy */
+#window #outer-box #scroll #inner-box #entry {
+  color: #fff;
+  background-color: rgba(24, 24, 24, 0.5); /* Ciemne tło */
+  padding: 0.6rem 1rem;
+  border-radius: 1rem; /* Zaokrąglone rogi */
+  transition: background-color 0.3s ease;
+}
+
+/* Wpisy przy najechaniu */
+#window #outer-box #scroll #inner-box #entry:hover {
+  background-color: rgba(208, 172, 136, 0.2); /* Jaśniejsze tło przy hover */
+  cursor: pointer; /* Zmiana kursora */
+}
+
+/* Wpisy wybrane */
+#window #outer-box #scroll #inner-box #entry:selected {
+  background-color: rgba(208, 172, 136, 0.3); /* Tło dla wybranego wpisu */
+}
+
