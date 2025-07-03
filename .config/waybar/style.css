@@ -15,11 +15,17 @@ window#waybar {
     background: alpha(@background, .6);
 }
 
-#clock, #battery, #network, #bluetooth, #cpu, #memory, #temperature, #workspaces, #custom-pacman {
-    padding: 0px 10px;
-    margin-right: 10px
+#backlight, #bluetooth, #cpu, #memory, #temperature, #workspaces, #custom-pacman {
+    padding: 0px 8px;
+    
 }
-
+#clock, #battery{
+    padding: 0px 12px;
+}
+#network{
+	padding: 0px 8px;
+	margin-right: 10px;
+}
 #battery.charging {
     color: #26A65B;
 }
@@ -42,6 +48,10 @@ window#waybar {
 
 #workspaces .inactive {
     color: #000000;         
+}
+#workspaces button:hover {
+    color: #FFFFFF;
+    background: transparent;
 }
 #custom-endpoint {
     color: transparent;

@@ -12,3 +12,5 @@ WOFI_DEST="$(pwd)/.config"
 cp -r "$HYPR_SOURCE" "$HYPR_DEST"
 cp -r "$WAYBAR_SOURCE" "$WAYBAR_DEST"
 cp -r "$WOFI_SOURCE" "$WOFI_DEST"
+cp -r $HOME/.vimrc $(pwd)
+cp -r $HOME/.bashrc $(pwd)
